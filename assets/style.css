@@ -1,0 +1,26 @@
+#title{
+    font-family: sans-serif;
+    text-align: center;
+}
+#description{
+    font-family: sans-serif;
+    text-align: center;
+}
+#container{
+    background-color: cornflowerblue;
+    padding: 20px;
+    border-radius: 2em;
+}
+#survey-form label{
+    display: block;
+    margin:10px;
+}
+#survey-form input{
+    margin-left:10px;
+}
+#survey-form input[type="text"], #survey-form input[type="email"], #survey-form textarea{
+    width: 90%;
+}
+#survey-form select{
+    margin-left:10px;
+}

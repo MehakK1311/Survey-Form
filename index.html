@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Covid Survey Form</title>
+    <link rel="stylesheet" href="assets\style.css" type="text/css">
+</head>
+<body>
+    <h1 id="title">
+		COVID-19 Vaccination Survey Form
+	</h1>
+	<p id="description">
+		This is a COVID-19 Vaccination survey page
+	</p>
+	<div id="container">
+		<form id="survey-form">
+			<label id="name-label"> 
+				Name:
+			</label>	
+				<input id="name" type="text" name="name" placeholder="Enter your name" required>
+			<br>
+			<label for="email" id="email-label" required> 
+				Email:
+			</label>	
+				<input id="email" type="email" name="email" placeholder="Enter your Email" required>
+			<br>
+			<label for="phone" id="number-label"> 
+				Phone Number:
+			</label>	
+				<input id="phone" type="tel" name="phone" placeholder="Enter your Phone Number" minlength="10" maxlength="10">
+			<br>
+			<label>
+				Gender:
+			</label>	
+				<select id="dropdown" name="gender">
+					<option value="male">Male</option>
+					<option value="female">Female</option>
+					<option value="other">Other</option>
+				</select>
+			<br>
+			<label>
+				Age:
+			</label id="number-label">	
+				<input id="number" type="Number" name="age" placeholder="Enter your Age" min="18" max="150">
+			<br>
+			<label>
+				Name of Vaccine:
+			</label>	
+				<select name="gender">
+					<option value="covid-shield">Covid Shield</option>
+					<option value="covaxin">Covaxin</option>
+				</select>
+			<br>
+			<fieldset>
+				<legend>
+					Dose Number:
+				</legend>
+				<label for="first">
+				<input id="first" type="radio" name="dose" value="first" checked> First
+				</label>
+				<label for="second">
+				<input id="second" type="radio" name="dose" value="second"> Second
+				</label>
+			</fieldset>
+			<br>
+			<fieldset>
+				<legend>
+					HOW DID YOU FEEL IN THE 1ST 24 HOURS OF VACCINATION:
+				</legend>
+				<label for="normal">
+				<input id="normal" type="checkbox" name="normal" value="normal" checked> Normal
+				</label>
+				<label for="head-ache">
+				<input id="head-ache" type="checkbox" name="head-ache" value="head-ache"> Head Ache
+				</label>
+				<label for="fever">
+				<input id="fever" type="checkbox" name="fever" value="fever"> Fever
+				</label>
+			</fieldset>
+			<br>
+			<label> 
+				State you have gotten vaccinated in:
+			</label>	
+				<input type="text" name="state" placeholder="Enter your state" required>
+			<br>
+			<label> 
+				City you have gotten vaccinated in:
+			</label>	
+				<input type="text" name="city" placeholder="Enter your city" required>
+			<br>
+			<label> 
+				Center Name:
+			</label>	
+				<input type="text" name="center" placeholder="Enter your center" >
+			<br>
+			<label>
+				ANY COMMENTS OR SUGGESTIONS?  
+			</label>
+			<textarea name="comment"></textarea>
+			<br>
+			<button id="submit" type="submit">SUBMIT</button>
+		</form>
+	</div>
+</body>
+</html>
